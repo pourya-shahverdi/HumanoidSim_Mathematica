@@ -1,0 +1,155 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4271,        145]
+NotebookOptionsPosition[      3774,        125]
+NotebookOutlinePosition[      4147,        141]
+CellTagsIndexPosition[      4104,        138]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"err", 
+   RowBox[{"(", 
+    RowBox[{"\[CapitalDelta]P", ",", "\[CapitalDelta]Q"}], ")"}]}], "=", 
+  RowBox[{
+   SuperscriptBox[
+    RowBox[{
+    "\[LeftDoubleBracketingBar]", "\[CapitalDelta]P", 
+     "\[RightDoubleBracketingBar]"}], "2"], "+", 
+   SuperscriptBox[
+    RowBox[{
+    "\[LeftDoubleBracketingBar]", "\[CapitalDelta]\[Theta]", 
+     "\[RightDoubleBracketingBar]"}], "2"]}]}], "\[IndentingNewLine]", 
+ RowBox[{"\[CapitalDelta]\[Theta]", "\[Congruent]", 
+  SuperscriptBox[
+   RowBox[{"(", "ln\[CapitalDelta]Q", ")"}], "\[Or]"]}]}], "Input",
+ CellChangeTimes->{{3.6870693601426883`*^9, 3.6870695026020327`*^9}, {
+  3.687069552582077*^9, 3.687069585077628*^9}, {3.687069681485695*^9, 
+  3.6870696963243685`*^9}, {3.687069932864011*^9, 3.6870699360801945`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"1", "\[Times]", 
+  SuperscriptBox["10", 
+   RowBox[{"-", "6"}]]}]], "Input",
+ CellChangeTimes->{{3.687070355127163*^9, 3.6870703622985735`*^9}}],
+
+Cell[BoxData[
+ SuperscriptBox["10", 
+  RowBox[{"-", "6"}]]], "Input",
+ CellChangeTimes->{{3.6870710262895513`*^9, 3.687071028610684*^9}}],
+
+Cell[BoxData["\[Delta]q"], "Input",
+ CellChangeTimes->{{3.687074094348034*^9, 3.6870740971861963`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"(", 
+  RowBox[{"\[Delta]P", ",", "\[Delta]\[Theta]"}], ")"}]], "Input",
+ CellChangeTimes->{{3.6870741580946803`*^9, 3.6870741689283*^9}}],
+
+Cell[BoxData[{
+ RowBox[{"\[Delta]P", "=", 
+  RowBox[{
+   SubscriptBox["X", "P"], 
+   RowBox[{"(", 
+    RowBox[{"q", ",", "\[Delta]q"}], ")"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"\[Delta]\[Theta]", "=", 
+  RowBox[{
+   SubscriptBox["X", "\[Theta]"], 
+   RowBox[{"(", 
+    RowBox[{"q", ",", "\[Delta]q"}], ")"}]}]}]}], "Input",
+ CellChangeTimes->{{3.687074252763095*^9, 3.6870742951885214`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"[", GridBox[{
+     {"\[Delta]P"},
+     {"\[Delta]\[Theta]"}
+    }], "]"}], "=", 
+  RowBox[{"[", GridBox[{
+     {
+      SubscriptBox["J", "11"], 
+      SubscriptBox["J", "12"], 
+      SubscriptBox["J", "13"], 
+      SubscriptBox["J", "14"], 
+      SubscriptBox["J", "15"], 
+      SubscriptBox["J", "16"]},
+     {
+      SubscriptBox["J", "21"], 
+      SubscriptBox["J", "22"], 
+      SubscriptBox["J", "23"], 
+      SubscriptBox["J", "24"], 
+      SubscriptBox["J", "25"], 
+      SubscriptBox["J", "26"]},
+     {
+      SubscriptBox["J", "31"], 
+      SubscriptBox["J", "32"], 
+      SubscriptBox["J", "33"], 
+      SubscriptBox["J", "34"], 
+      SubscriptBox["J", "35"], 
+      SubscriptBox["J", "36"]},
+     {
+      SubscriptBox["J", "41"], 
+      SubscriptBox["J", "42"], 
+      SubscriptBox["J", "43"], 
+      SubscriptBox["J", "44"], 
+      SubscriptBox["J", "45"], 
+      SubscriptBox["J", "46"]},
+     {
+      SubscriptBox["J", "51"], 
+      SubscriptBox["J", "52"], 
+      SubscriptBox["J", "53"], 
+      SubscriptBox["J", "54"], 
+      SubscriptBox["J", "55"], 
+      SubscriptBox["J", "56"]},
+     {
+      SubscriptBox["J", "61"], 
+      SubscriptBox["J", "62"], 
+      SubscriptBox["J", "63"], 
+      SubscriptBox["J", "64"], 
+      SubscriptBox["J", "65"], 
+      SubscriptBox["J", "66"]}
+    }], "]"}]}]], "Input",
+ CellChangeTimes->{{3.687074911562776*^9, 3.687075145641165*^9}}]
+},
+WindowSize->{759, 835},
+WindowMargins->{{Automatic, 572}, {63, Automatic}},
+Magnification:>2.2 Inherited,
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (July 28, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 804, 19, 111, "Input"],
+Cell[1365, 41, 168, 4, 67, "Input"],
+Cell[1536, 47, 137, 3, 67, "Input"],
+Cell[1676, 52, 103, 1, 67, "Input"],
+Cell[1782, 55, 161, 3, 67, "Input"],
+Cell[1946, 60, 395, 11, 111, "Input"],
+Cell[2344, 73, 1426, 50, 246, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
